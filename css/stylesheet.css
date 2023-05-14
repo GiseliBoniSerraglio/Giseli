@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #c4c3ca;
+    background-color: #1f2029;
+}
+
+table {
+    border: solid 1px white;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td, th {
+    border: solid 1px white;
+    text-align: center;
+    padding: 10px;
+}
+
+.switch-wrap h1 {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.switch-wrap h2 {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+p {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+    margin-left: 130px;
+    margin-right: 130px;
+    line-height: 2; /* espaçamento entre linhas*/
+}
+
+.frame {
+    width: 50%;
+    margin: 35px auto;
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+}
+
+.custom-button {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn{
+    background: #8167a9;
+    border: none;
+    z-index: 1; /* posição da camada */
+}
+
+.btn:after {
+    position: absolute;
+    content: ""; /* adiciona um conteúdo fictício */
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #a798bd;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn:hover:after {  /* adiciona um conteúdo após o elemento quando o usuário passa o mouse sobre ele */
+    left: 0;
+    width: 100%;
+}
+
+.btn:active {  /* aplica a um elemento quando ele está sendo pressionado */
+    top: 2px;
+}
